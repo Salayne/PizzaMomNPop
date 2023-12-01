@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.momnpop.pizzaWebController">
+   <children>
+      <AnchorPane fx:id="webAnchorPane" prefHeight="1400.0" prefWidth="900.0">
+         <children>
+            <AnchorPane layoutX="8.0" prefHeight="168.0" prefWidth="900.0" style="-fx-background-color: #8B0000, #FFD2D2, #FFFFFF#8B0000, #AA0000, #FFD2D2, #FFFFFF;">
+               <children>
+                  <Label layoutX="372.0" layoutY="61.0" prefHeight="51.0" prefWidth="172.0" text="Pizza Builder" textFill="#190101">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="40.0" layoutY="72.0" text="Mom &amp; Pop" textFill="#2a0202">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="back" mnemonicParsing="false" onAction="#switchToPopandMom" prefHeight="43.0" prefWidth="172.0" style="-fx-background-color: #333333, #888888, #DDDDDD, #FFFFFF;" text="&lt;&lt; Back to Menu">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Cart" layoutX="779.0" layoutY="53.0" mnemonicParsing="false" onAction="#cart" prefHeight="61.0" prefWidth="91.0" style="-fx-background-color: #8B0000, #FFD2D2, #FFFFFF#8B0000, #AA0000, #FFD2D2, #FFFFFF;" text="Cart">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+               <effect>
+                  <InnerShadow choke="0.17" height="174.79" radius="92.38499999999999" width="196.75">
+                     <input>
+                        <InnerShadow />
+                     </input>
+                     <color>
+                        <Color red="0.8705882430076599" green="0.01568627543747425" blue="0.01568627543747425" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </AnchorPane>
+            <Line endX="675.5554809570312" endY="-11.111099243164062" layoutX="228.0" layoutY="349.0" startX="-223.99998474121094" startY="-11.111099243164062" strokeWidth="2.0" />
+            <Line endX="675.5554809570312" endY="-11.111099243164062" layoutX="232.0" layoutY="497.0" startX="-223.99998474121094" startY="-11.111099243164062" strokeWidth="2.0" />
+            <Line endX="675.5554809570312" endY="-11.111099243164062" layoutX="234.0" layoutY="817.0" startX="-223.99998474121094" startY="-11.111099243164062" strokeWidth="2.0" />
+            <AnchorPane layoutX="14.0" layoutY="201.0" prefHeight="120.0" prefWidth="151.0" style="-fx-background-color: #333333, #888888, #DDDDDD, #FFFFFF;">
+               <children>
+                  <Label layoutX="25.0" layoutY="42.0" text="Toppings">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <InnerShadow choke="0.29" height="78.04" radius="39.47" width="81.84">
+                     <color>
+                        <Color red="0.7882353067398071" green="0.21960784494876862" blue="0.21960784494876862" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </AnchorPane>
+            <CheckBox fx:id="tcheckBox1" layoutX="190.0" layoutY="226.0" mnemonicParsing="false" onAction="#toppingsSelection" text="Cheddars($0.49)">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <Label layoutX="223.0" layoutY="186.0" text="Cheese">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="478.0" layoutY="186.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="tcheckBox2" layoutX="190.0" layoutY="261.0" mnemonicParsing="false" onAction="#toppingsSelection" text="Morrazella($0.49)">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="tcheckBox3" layoutX="190.0" layoutY="299.0" mnemonicParsing="false" onAction="#toppingsSelection" text="Ricotta($0.49)">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="tcheckBox4" layoutX="455.0" layoutY="226.0" mnemonicParsing="false" onAction="#toppingsSelection" text="Pepperoni($0.99)">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="tcheckBox5" layoutX="455.0" layoutY="261.0" mnemonicParsing="false" onAction="#toppingsSelection" text="Chicken($0.99)">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="tcheckBox6" layoutX="455.0" layoutY="299.0" mnemonicParsing="false" onAction="#toppingsSelection" text="Ham($0.99)">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="tcheckBox7" layoutX="749.0" layoutY="226.0" mnemonicParsing="false" onAction="#toppingsSelection" text="Onion($0.49)">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="tcheckBox8" layoutX="749.0" layoutY="261.0" mnemonicParsing="false" onAction="#toppingsSelection" text="Black Olive($0.49)">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="tcheckBox9" layoutX="749.0" layoutY="299.0" mnemonicParsing="false" onAction="#toppingsSelection" text="Murshroom($0.49)">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <Label layoutX="489.0" layoutY="186.0" text="Meat">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="779.0" layoutY="186.0" text="Veggies">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="14.0" layoutY="348.0" prefHeight="120.0" prefWidth="151.0" style="-fx-background-color: #333333, #888888, #DDDDDD, #FFFFFF;">
+               <children>
+                  <Label layoutX="25.0" layoutY="42.0" text="Size*">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <InnerShadow choke="0.25" height="78.04" radius="39.47" width="81.84">
+                     <color>
+                        <Color red="0.7882353067398071" green="0.21960784494876862" blue="0.21960784494876862" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </AnchorPane>
+            <RadioButton fx:id="sizeRadioButton1" layoutX="191.0" layoutY="416.0" mnemonicParsing="false" onAction="#sizeSelection" text="10 inches ($5.99)">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="size" />
+               </toggleGroup>
+            </RadioButton>
+            <Label layoutX="209.0" layoutY="362.0" text="Small">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="sizeRadioButton2" layoutX="393.0" layoutY="416.0" mnemonicParsing="false" onAction="#sizeSelection" text="14 inches ($8.99)" toggleGroup="$size">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="sizeRadioButton3" layoutX="581.0" layoutY="416.0" mnemonicParsing="false" onAction="#sizeSelection" text="16 inches ($10.99)" toggleGroup="$size">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="sizeRadioButton4" layoutX="756.0" layoutY="416.0" mnemonicParsing="false" onAction="#sizeSelection" text="20 inches($12.99)" toggleGroup="$size">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="411.0" layoutY="362.0" text="Medium">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="601.0" layoutY="362.0" text="Large">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="791.0" layoutY="362.0" text="Extra Large">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="14.0" layoutY="502.0" prefHeight="120.0" prefWidth="151.0" style="-fx-background-color: #333333, #888888, #DDDDDD, #FFFFFF;">
+               <children>
+                  <Label layoutX="25.0" layoutY="42.0" text="Crust">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow choke="0.49" height="74.235" radius="38.51875" width="81.84" />
+                     </effect>
+                  </Label>
+               </children>
+               <effect>
+                  <InnerShadow choke="0.25" height="74.24" radius="38.519999999999996" width="81.84">
+                     <color>
+                        <Color red="0.7882353067398071" green="0.21960784494876862" blue="0.21960784494876862" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </AnchorPane>
+            <RadioButton fx:id="crustRadioButton1" layoutX="197.0" layoutY="520.0" mnemonicParsing="false" onAction="#crustSelection" text="Thin Crust (No cost)">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="crust" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="crustRadioButton2" layoutX="197.0" layoutY="570.0" mnemonicParsing="false" onAction="#crustSelection" text="Hand Tossed (No Coast)" toggleGroup="$crust">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="crustRadioButton3" layoutX="458.0" layoutY="520.0" mnemonicParsing="false" onAction="#crustSelection" text="Regular Crust (No cost)" toggleGroup="$crust">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="crustRadioButton4" layoutX="459.0" layoutY="570.0" mnemonicParsing="false" onAction="#crustSelection" text="Garlic Butter ($0.49)" toggleGroup="$crust">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="crustRadioButton5" layoutX="740.0" layoutY="520.0" mnemonicParsing="false" onAction="#crustSelection" text="Stuffed Crust ($0.49)" toggleGroup="$crust">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="crustRadioButton6" layoutX="742.0" layoutY="559.0" mnemonicParsing="false" onAction="#crustSelection" text="Satted Pretzet ($0.49)" toggleGroup="$crust">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <Line endX="675.5554809570312" endY="-11.111099243164062" layoutX="242.0" layoutY="661.0" startX="-223.99998474121094" startY="-11.111099243164062" strokeWidth="2.0" />
+            <AnchorPane layoutX="14.0" layoutY="669.0" prefHeight="120.0" prefWidth="151.0" style="-fx-background-color: #333333, #888888, #DDDDDD, #FFFFFF;">
+               <children>
+                  <Label layoutX="25.0" layoutY="42.0" style="-fx-background-color: #333333, #888888, #DDDDDD, #FFFFFF;" text="Base">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <InnerShadow choke="0.25" height="74.24" radius="38.519999999999996" width="81.84">
+                     <color>
+                        <Color red="0.7882353067398071" green="0.21960784494876862" blue="0.21960784494876862" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </AnchorPane>
+            <RadioButton fx:id="baseRadioButton1" layoutX="183.0" layoutY="718.0" mnemonicParsing="false" onAction="#baseSelection" text="No Base (No cost)">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="base" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="baseRadioButton2" layoutX="463.0" layoutY="718.0" mnemonicParsing="false" onAction="#baseSelection" text="Oil Garlic Base ($0.99)" toggleGroup="$base">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="baseRadioButton3" layoutX="754.0" layoutY="718.0" mnemonicParsing="false" onAction="#baseSelection" text="Red Sauce ($0.99)" toggleGroup="$base">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <Button fx:id="addToCart" layoutX="770.0" layoutY="832.0" mnemonicParsing="false" onAction="#addtoCart" prefHeight="51.0" prefWidth="104.0" style="-fx-background-color: #333333, #888888, #DDDDDD, #FFFFFF;" text="Add to Cart">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <effect>
+                  <InnerShadow choke="0.2" height="74.24" radius="24.604999999999997" width="26.18">
+                     <color>
+                        <Color red="0.8538011908531189" green="0.20905831456184387" blue="0.20905831456184387" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Button>
+            <AnchorPane fx:id="anchorPane" layoutX="483.0" layoutY="440.0" prefHeight="390.0" prefWidth="254.0">
+               <children>
+                  <TextFlow fx:id="textFlow" layoutX="1.0" layoutY="3.0" prefHeight="389.0" prefWidth="251.0" style="-fx-font-size: 16px;" />
+               </children>
+            </AnchorPane>
+            <Line endX="675.5554809570312" endY="-11.111099243164062" layoutX="-82.0" layoutY="349.0" startX="-223.99998474121094" startY="-11.111099243164062" strokeWidth="2.0" />
+            <Button fx:id="clear" layoutX="25.0" layoutY="832.0" mnemonicParsing="false" onAction="#clear" prefHeight="51.0" prefWidth="135.0" style="-fx-background-color: #333333, #888888, #DDDDDD, #FFFFFF;" text="clear">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <effect>
+                  <InnerShadow choke="0.2" height="74.24" radius="24.604999999999997" width="26.18">
+                     <color>
+                        <Color red="0.8538011908531189" green="0.20905831456184387" blue="0.20905831456184387" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Button>
+            <Label layoutX="209.0" layoutY="603.0" prefHeight="36.0" prefWidth="213.0" text="Note:  Crust default: Regular">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="202.0" layoutY="769.0" prefHeight="36.0" prefWidth="213.0" text="Note:  Base defaut: No Base">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="continueButton" layoutX="291.0" layoutY="832.0" mnemonicParsing="false" onAction="#continueOrder" prefHeight="51.0" prefWidth="113.0" style="-fx-background-color: #333333, #888888, #DDDDDD, #FFFFFF;" text="Contiunue Order">
+               <effect>
+                  <InnerShadow choke="0.2" height="74.24" radius="24.604999999999997" width="26.18">
+                     <color>
+                        <Color red="0.8538011908531189" green="0.20905831456184387" blue="0.20905831456184387" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Button>
+            <Button fx:id="CheckOut" layoutX="546.0" layoutY="832.0" mnemonicParsing="false" onAction="#checkOutOrder" prefHeight="51.0" prefWidth="109.0" style="-fx-background-color: #333333, #888888, #DDDDDD, #FFFFFF;" text="CheckOut">
+               <effect>
+                  <InnerShadow choke="0.2" height="74.24" radius="24.604999999999997" width="26.18">
+                     <color>
+                        <Color red="0.8538011908531189" green="0.20905831456184387" blue="0.20905831456184387" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Button>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+</StackPane>

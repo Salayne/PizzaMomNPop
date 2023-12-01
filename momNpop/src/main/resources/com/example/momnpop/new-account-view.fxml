@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="900.0" style="-fx-background-color: #8B0000, #FFD2D2, #FFFFFF#8B0000, #AA0000, #FFD2D2, #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.momnpop.NewAccountPageController">
+   <children>
+       <AnchorPane prefHeight="168.0" prefWidth="900.0" style="-fx-background-color: #8B0000, #FFD2D2, #FFFFFF#8B0000, #AA0000, #FFD2D2, #FFFFFF;">
+         <effect>
+            <InnerShadow choke="0.17" height="191.26" radius="96.5025" width="196.75">
+               <input>
+                  <InnerShadow />
+               </input>
+               <color>
+                  <Color red="0.8705882430076599" green="0.01568627543747425" blue="0.01568627543747425" />
+               </color>
+            </InnerShadow>
+         </effect>
+         <children>
+            <Button fx:id="bkButton" layoutX="-9.0" layoutY="-9.0" mnemonicParsing="false" onAction="#bkButton" prefHeight="70.0" prefWidth="88.0" style="-fx-background-color: #333333, #888888, #DDDDDD, #FFFFFF;" text="&lt;&lt;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="0.8549019694328308" green="0.2078431397676468" blue="0.2078431397676468" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Button>
+         </children></AnchorPane>
+      <TextField fx:id="firstNameTextField" layoutX="260.0" layoutY="401.0" prefHeight="31.0" prefWidth="194.0" promptText="Enter First Name">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <TextField fx:id="lastNameTextField" layoutX="485.0" layoutY="401.0" prefHeight="26.0" prefWidth="194.0" promptText="Enter Last Name">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <TextField fx:id="streetTextField" layoutX="260.0" layoutY="468.0" prefHeight="31.0" prefWidth="419.0" promptText="Enter Street">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <TextField fx:id="stateTextField" layoutX="422.0" layoutY="538.0" prefHeight="26.0" prefWidth="94.0" promptText="Enter State">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <TextField fx:id="zipTextField" layoutX="524.0" layoutY="538.0" prefHeight="31.0" prefWidth="155.0" promptText="Enter Zip Code">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <TextField fx:id="phoneNumberTextField" layoutX="260.0" layoutY="323.0" prefHeight="31.0" prefWidth="194.0" promptText="Enter Phone Number">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <PasswordField fx:id="passwordField" layoutX="489.0" layoutY="323.0" prefHeight="31.0" prefWidth="186.0" promptText="Create Password">
+         <font>
+            <Font size="15.0" />
+         </font></PasswordField>
+      <Button layoutX="375.0" layoutY="656.0" mnemonicParsing="false" onAction="#signUp" prefHeight="61.0" prefWidth="188.0" text="SignUp">
+         <effect>
+            <InnerShadow choke="0.39" height="63.26" radius="37.3925" width="88.31">
+               <color>
+                  <Color red="0.8352941274642944" green="0.27843138575553894" blue="0.27843138575553894" />
+               </color></InnerShadow>
+         </effect>
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <TextField fx:id="cityTextField" layoutX="260.0" layoutY="538.0" prefHeight="31.0" prefWidth="150.0" promptText="Enter City">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label fx:id="validNumber" layoutX="259.0" layoutY="354.0" prefHeight="18.0" prefWidth="325.0" text="Please enter a valid telephone number" textFill="RED" visible="false" />
+   </children>
+   <effect>
+      <InnerShadow choke="0.26" height="157.56" radius="76.5" width="150.44">
+         <color>
+            <Color red="0.7960784435272217" green="0.47058823704719543" blue="0.47058823704719543" />
+         </color>
+      </InnerShadow>
+   </effect>
+</AnchorPane>

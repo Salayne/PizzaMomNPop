@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="900.0" prefWidth="900.0" style="-fx-background-color: #8B0000, #FFD2D2, #FFFFFF#8B0000, #AA0000, #FFD2D2, #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.momnpop.checkOutController">
+   <children>
+      <AnchorPane prefHeight="168.0" prefWidth="919.0" style="-fx-background-color: #8B0000, #FFD2D2, #FFFFFF#8B0000, #AA0000, #FFD2D2, #FFFFFF;">
+         <children>
+            <Button fx:id="LoginButton" layoutX="760.0" layoutY="71.0" mnemonicParsing="false" onAction="#login" prefHeight="40.0" prefWidth="97.0" style="-fx-background-color: #333333, #888888, #DDDDDD, #FFFFFF;" text="Login">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <effect>
+                  <InnerShadow choke="0.2" height="50.21" radius="18.5975" width="26.18">
+                     <color>
+                        <Color red="0.8549019694328308" green="0.2078431397676468" blue="0.2078431397676468" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Button>
+            <Button layoutX="22.0" layoutY="64.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="109.0" style="-fx-background-color: #333333, #888888, #DDDDDD, #FFFFFF;" text="WelCome to">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <effect>
+                  <InnerShadow choke="0.2" height="50.21" radius="18.5975" width="26.18">
+                     <color>
+                        <Color red="0.8549019694328308" green="0.2078431397676468" blue="0.2078431397676468" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Button>
+            <Label layoutX="305.0" layoutY="38.0" prefHeight="91.0" prefWidth="290.0" text="    Pop &amp; Mom">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Button fx:id="switchtoMomandPop" layoutY="7.0" mnemonicParsing="false" onAction="#switchToPopandMom" prefHeight="40.0" prefWidth="141.0" style="-fx-background-color: #333333, #888888, #DDDDDD, #FFFFFF;" text="&lt;&lt; Back to Menu">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <effect>
+                  <InnerShadow choke="0.2" height="50.21" radius="18.5975" width="26.18">
+                     <color>
+                        <Color red="0.8549019694328308" green="0.2078431397676468" blue="0.2078431397676468" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Button>
+         </children>
+         <effect>
+            <InnerShadow choke="0.17" height="185.76999999999998" radius="95.13" width="196.75">
+               <input>
+                  <InnerShadow />
+               </input>
+               <color>
+                  <Color red="0.8705882430076599" green="0.01568627543747425" blue="0.01568627543747425" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorPane" layoutX="285.0" layoutY="240.0" prefHeight="492.0" prefWidth="351.0">
+         <effect>
+            <InnerShadow choke="0.59" radius="22.62" width="71.48">
+               <color>
+                  <Color red="0.7134503126144409" green="0.4609534740447998" blue="0.4609534740447998" />
+               </color>
+            </InnerShadow>
+         </effect>
+         <children>
+            <TextFlow fx:id="textFlow" layoutX="5.0" onDragDetected="#readOrder" prefHeight="502.0" prefWidth="342.0" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="orderButton" layoutX="376.0" layoutY="181.0" mnemonicParsing="false" onAction="#readOrder" prefHeight="53.0" prefWidth="169.0" style="-fx-background-color: #333333, #888888, #DDDDDD, #FFFFFF;" text="Click to See Orders">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.2" height="50.21" radius="18.5975" width="26.18">
+               <color>
+                  <Color red="0.8549019694328308" green="0.2078431397676468" blue="0.2078431397676468" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button fx:id="playOrder" layoutX="375.0" layoutY="750.0" mnemonicParsing="false" onAction="#placeOrder" prefHeight="53.0" prefWidth="169.0" style="-fx-background-color: #333333, #888888, #DDDDDD, #FFFFFF;" text="Place Order">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.2" height="50.21" radius="18.5975" width="26.18">
+               <color>
+                  <Color red="0.8549019694328308" green="0.2078431397676468" blue="0.2078431397676468" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button fx:id="playOrder1" layoutX="375.0" layoutY="824.0" mnemonicParsing="false" onAction="#placeOrder" prefHeight="53.0" prefWidth="169.0" style="-fx-background-color: #333333, #888888, #DDDDDD, #FFFFFF;" text="Cancel Order">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.2" height="50.21" radius="18.5975" width="26.18">
+               <color>
+                  <Color red="0.8549019694328308" green="0.2078431397676468" blue="0.2078431397676468" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+   </children>
+   <effect>
+      <InnerShadow choke="0.26" height="164.68" radius="78.28" width="150.44">
+         <color>
+            <Color red="0.7953216433525085" green="0.47130170464515686" blue="0.47130170464515686" />
+         </color>
+      </InnerShadow>
+   </effect>
+</AnchorPane>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="900.0" prefWidth="900.0" style="-fx-background-color: #8B0000, #FFD2D2, #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.momnpop.LoginPageController">
+   <children>
+      <AnchorPane prefHeight="168.0" prefWidth="919.0" style="-fx-background-color: #8B0000, #FFD2D2, #FFFFFF#8B0000, #AA0000, #FFD2D2, #FFFFFF;">
+         <effect>
+            <InnerShadow choke="0.17" height="191.26" radius="96.5025" width="196.75">
+               <input>
+                  <InnerShadow />
+               </input>
+               <color>
+                  <Color red="0.8705882430076599" green="0.01568627543747425" blue="0.01568627543747425" />
+               </color>
+            </InnerShadow>
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Label layoutX="305.0" layoutY="38.0" prefHeight="91.0" prefWidth="290.0" text=" Mom &amp; Pop">
+               <font>
+                  <Font size="40.0" />
+               </font></Label>
+            <Button fx:id="backButton" layoutX="-9.0" layoutY="-9.0" mnemonicParsing="false" onAction="#backButton" prefHeight="70.0" prefWidth="88.0" style="-fx-background-color: #333333, #888888, #DDDDDD, #FFFFFF;" text="&lt;&lt;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="0.8549019694328308" green="0.2078431397676468" blue="0.2078431397676468" />
+                     </color>
+                  </InnerShadow>
+               </effect></Button>
+         </children></AnchorPane>
+      <Button fx:id="lognInButton" layoutX="339.0" layoutY="500.0" mnemonicParsing="false" onAction="#login" prefHeight="70.0" prefWidth="210.0" text="Log In">
+         <effect>
+            <InnerShadow choke="0.39" height="63.26" radius="37.3925" width="88.31">
+               <color>
+                  <Color red="0.8352941274642944" green="0.27843138575553894" blue="0.27843138575553894" />
+               </color>
+            </InnerShadow>
+         </effect>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <TextField fx:id="phoneNumberTextField" layoutX="262.0" layoutY="318.0" prefHeight="42.0" prefWidth="394.0" promptText="Enter Phone Number">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordField" layoutX="262.0" layoutY="407.0" prefHeight="42.0" prefWidth="394.0" promptText="Enter Password">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </PasswordField>
+      <Label fx:id="orLabel" alignment="CENTER" layoutX="419.0" layoutY="593.0" prefHeight="30.0" prefWidth="52.0" text="-OR-" textAlignment="CENTER" />
+      <Button fx:id="signUpButton" layoutX="340.0" layoutY="646.0" mnemonicParsing="false" onAction="#signUp" prefHeight="69.0" prefWidth="210.0" text="Sign Up">
+         <effect>
+            <InnerShadow choke="0.39" height="63.26" radius="37.3925" width="88.31">
+               <color>
+                  <Color red="0.8352941274642944" green="0.27843138575553894" blue="0.27843138575553894" />
+               </color>
+            </InnerShadow>
+         </effect>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorMessage" layoutX="271.0" layoutY="269.0" prefHeight="18.0" prefWidth="384.0" text="Please enter your phone number and password" textAlignment="CENTER" textFill="#d90505" visible="false" />
+      <Label fx:id="invalid" layoutX="337.0" layoutY="459.0" prefHeight="18.0" prefWidth="210.0" text="Invalid Phone Number or Password" textAlignment="CENTER" textFill="#ef0a0a" visible="false" />
+   </children>
+   <effect>
+      <InnerShadow choke="0.26" height="157.56" radius="76.5" width="150.44">
+         <color>
+            <Color red="0.7960784435272217" green="0.47058823704719543" blue="0.47058823704719543" />
+         </color>
+      </InnerShadow>
+   </effect>
+</AnchorPane>

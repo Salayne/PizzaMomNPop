@@ -1,0 +1,8 @@
+Your Order Pizza: 
+1.Pizza 
+-Toppings: Cheddars($0.49)
+- Base: No Base (No cost)
+- Crust: Hand Tossed (No Coast)
+- Size: 10 inches ($5.99)
+--------------------------------
+Total Price: 6.48

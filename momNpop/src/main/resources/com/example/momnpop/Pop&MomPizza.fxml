@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="900.0" prefWidth="900.0" style="-fx-background-color: #8B0000, #FFD2D2, #FFFFFF#8B0000, #AA0000, #FFD2D2, #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.momnpop.PopandMomController">
+   <children>
+      <AnchorPane prefHeight="168.0" prefWidth="919.0" style="-fx-background-color: #8B0000, #FFD2D2, #FFFFFF#8B0000, #AA0000, #FFD2D2, #FFFFFF;">
+         <children>
+            <Button fx:id="LoginButton" layoutX="685.0" layoutY="71.0" mnemonicParsing="false" onAction="#logIn" prefHeight="40.0" prefWidth="97.0" style="-fx-background-color: #333333, #888888, #DDDDDD, #FFFFFF;" text="Log In">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <effect>
+                  <InnerShadow choke="0.2" height="50.21" radius="18.5975" width="26.18">
+                     <color>
+                        <Color red="0.8549019694328308" green="0.2078431397676468" blue="0.2078431397676468" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Button>
+            <Button layoutX="793.0" layoutY="71.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="97.0" style="-fx-background-color: #333333, #888888, #DDDDDD, #FFFFFF;" text="Cart">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <effect>
+                  <InnerShadow choke="0.2" height="50.21" radius="18.5975" width="26.18">
+                     <color>
+                        <Color red="0.8549019694328308" green="0.2078431397676468" blue="0.2078431397676468" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Button>
+            <Button layoutX="63.0" layoutY="64.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="109.0" style="-fx-background-color: #333333, #888888, #DDDDDD, #FFFFFF;" text="WelCome to">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <effect>
+                  <InnerShadow choke="0.2" height="50.21" radius="18.5975" width="26.18">
+                     <color>
+                        <Color red="0.8549019694328308" green="0.2078431397676468" blue="0.2078431397676468" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Button>
+            <Label layoutX="305.0" layoutY="38.0" prefHeight="91.0" prefWidth="290.0" text="  Mom &amp; Pop">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <InnerShadow choke="0.17" height="185.76999999999998" radius="95.13" width="196.75">
+               <input>
+                  <InnerShadow />
+               </input>
+               <color>
+                  <Color red="0.8705882430076599" green="0.01568627543747425" blue="0.01568627543747425" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="304.0" layoutY="248.0" prefHeight="72.0" prefWidth="281.0" style="-fx-background-color: #333333, #888888, #DDDDDD, #FFFFFF; -fx-background-image: url('com/example/popandmompizza/Pepsi.jpg');">
+         <children>
+            <Label layoutX="43.0" layoutY="16.0" prefHeight="40.0" prefWidth="214.0" text="Pick Your Order!">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <InnerShadow choke="0.29" height="78.04" radius="39.47" width="81.84">
+               <color>
+                  <Color red="0.7882353067398071" green="0.21960784494876862" blue="0.21960784494876862" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </AnchorPane>
+      <Button fx:id="pizzasButton" layoutX="304.0" layoutY="400.0" mnemonicParsing="false" onAction="#switchToPizzaWeb" prefHeight="72.0" prefWidth="281.0" style="-fx-background-color: #333333, #888888, #DDDDDD, #FFFFFF;" text="Pizzas">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.39" height="38.2" radius="31.1275" width="88.31">
+               <color>
+                  <Color red="0.8362573385238647" green="0.2787524461746216" blue="0.2787524461746216" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button fx:id="drinkButton" layoutX="304.0" layoutY="550.0" mnemonicParsing="false" onAction="#switchToBeverage" prefHeight="72.0" prefWidth="281.0" style="-fx-background-color: #333333, #888888, #DDDDDD, #FFFFFF;" text="Drinks">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.39" height="38.2" radius="31.1275" width="88.31">
+               <color>
+                  <Color red="0.8362573385238647" green="0.2787524461746216" blue="0.2787524461746216" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+   </children>
+   <effect>
+      <InnerShadow choke="0.26" height="164.68" radius="78.28" width="150.44">
+         <color>
+            <Color red="0.7953216433525085" green="0.47130170464515686" blue="0.47130170464515686" />
+         </color>
+      </InnerShadow>
+   </effect>
+</AnchorPane>
